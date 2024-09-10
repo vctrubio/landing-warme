@@ -2,5 +2,20 @@
     height: 8vh;
     width: 100%;
     background-color: black;
+    color: white;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-weight: bolder;
+
+    >*{
+        cursor: pointer;
+        padding: 6px;
+    }
+
+    >*:hover{
+        color: red;
+    }
 }
