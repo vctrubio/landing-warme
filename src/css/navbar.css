@@ -1,4 +1,6 @@
-.nav-bar{
+.nav-bar {
+    position: fixed;
+    top: 0;
     height: 8vh;
     width: 100%;
     background-color: black;
@@ -9,12 +11,25 @@
     gap: 2em;
     font-weight: bolder;
 
-    >*{
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+
+    >* {
         cursor: pointer;
         padding: 6px;
     }
-    
-    >*:hover{
+
+    >*:hover {
         border-bottom: 2px solid red;
     }
+}
+
+.nav-bar.hidden {
+    transform: translateY(-100%);
+    /* Hide navbar when scrolling down */
+}
+
+.nav-bar.visible {
+    transform: translateY(0);
+    /* Show navbar when scrolling up */
 }
