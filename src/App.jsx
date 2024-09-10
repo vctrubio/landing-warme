@@ -1,11 +1,20 @@
-import './App.css'
+import './css/App.css'
+import { BannerDesc, BannerPhoto } from './components/Banners';
+import { Calculator } from './components/Calculator';
+import { ContactForm } from './components/ContactForm';
+import Faq from './components/Faq';
+import NavBar from './components/NavBar';
 
 function App() {
 
   return (
     <>
-      
-      helloworld
+      <NavBar/>
+      <BannerPhoto/>
+      <BannerDesc/>
+      <Calculator/>
+      <ContactForm/>
+      <Faq/>
     </>
   )
 }
