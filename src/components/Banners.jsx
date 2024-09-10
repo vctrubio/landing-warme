@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import logo from '../assets/react.svg';
-import '../css/Banner.css'
+import '../css/banner.css'
 
 const imgLocation = "/back-a.png"
 
