@@ -9,12 +9,22 @@ function App() {
 
   return (
     <>
-      <NavBar/>
-      <BannerPhoto/>
-      <BannerDesc/>
-      <Calculator/>
-      <ContactForm/>
-      <Faq/>
+      <div id="warme">
+        <NavBar />
+      </div>
+      <div id="banner">
+        <BannerPhoto />
+      </div>
+      <div id="desc">
+        <BannerDesc />
+      </div>
+      <div id="calc">
+        <Calculator />
+      </div>
+      <div id="contact">
+        <ContactForm />
+      </div>
+      <Faq />
     </>
   )
 }

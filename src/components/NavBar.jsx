@@ -1,15 +1,14 @@
-import '../css/navbar.css'
-
+import '../css/navbar.css';
 
 const NavBar = () => {
     return (
         <div className='nav-bar'>
-            <div className='home'>Home</div>
-            <div className='desc'>Description</div>
-            <div className='calc'>Calculator</div>
-            <div className='contact'>Contact</div>
+            <a href='#warme'>Home</a>
+            <a href='#desc'>Description</a>
+            <a href='#calc'>Calculator</a>
+            <a href='#contact'>Contact</a>
         </div>
     );
 }
- 
-export default navbar;
+
+export default NavBar;
