@@ -5,16 +5,15 @@ import { CalculatorChart } from './CalculatorChart'
 
 const PuntoDeAhorro = ({ data, ahorroMensual }) => {
     return (
-        <div>
-            <div className='punto-ahorro'>
-                <CalculatorChart data={data} ahorroMensual={ahorroMensual} />
-                <div style={{ marginTop: 10, lineHeight: '1.4rem' }}>
-                    El punto de amortización nos indica un calculo aproximado del tiempo que se tardaría en recuperar la inversión de transitar a Warme, y viene dado por el número de asientos calefactables y la eficiencia energética de cada establecimiento.
-                </div>
+        <div className='punto-ahorro'>
+            <CalculatorChart data={data} ahorroMensual={ahorroMensual} />
+            <div style={{ marginTop: 10, lineHeight: '1.4rem' }}>
+                El punto de amortización nos indica un calculo aproximado del tiempo que se tardaría en recuperar la inversión de transitar a Warme, y viene dado por el número de asientos calefactables y la eficiencia energética de cada establecimiento.
             </div>
         </div>
     )
 }
+
 const CalculatorQuestion = ({ question, min, max, value, setValue, desc }) => {
     const handleSliderChange = (event) => {
         setValue(event.target.value);
@@ -41,12 +40,13 @@ const CalculatorQuestion = ({ question, min, max, value, setValue, desc }) => {
 const SaberMas = () => {
     return (
         <div className='punto-g'>
-            <div className='p-4'>
-                <h5 className='mb-3'>¿Te gustaría saber exactamente cuánto podrías ahorrar con Warme?</h5>
-                <p>Déjanos tu mail y te haremos un estudio exhaustivo personalizado</p>
-                <div className='d-flex flex-row justify-content-center mt-1' style={{ gap: '1em' }}>
-                    <input type='text' placeholder='email' />
-                    <button style={{ width: '200px', fontWeight: 'lighter' }}>Pedir estudio</button>
+            <div>
+                <h2>¿Te gustaría saber exactamente <br></br>cuánto podrías ahorrar con Warme?</h2>
+                <h3>Déjanos tu mail y te haremos un estudio <br /> exhaustivo personalizado</h3>
+
+                <div className='punto-g-button'>
+                    <input type='text' placeholder='Email' />
+                    <button>Pedir estudio</button>
                 </div>
             </div>
             <div className='punto-g-banner'>
@@ -115,8 +115,8 @@ const BarContainer = ({ title, a, b, footer, flag, ahorroMensual, setAhorroMensu
 
             </div>
 
-            <div>
-                <span className='d-flex flex-start' style={{ marginLeft: 6 }}>
+            <div >
+                <span className='bar-arrow'>
                     <svg width="40px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C12.5523 3 13 3.44772 13 4V17.5858L18.2929 12.2929C18.6834 11.9024 19.3166 11.9024 19.7071 12.2929C20.0976 12.6834 20.0976 13.3166 19.7071 13.7071L12.7071 20.7071C12.3166 21.0976 11.6834 21.0976 11.2929 20.7071L4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929C4.68342 11.9024 5.31658 11.9024 5.70711 12.2929L11 17.5858V4C11 3.44772 11.4477 3 12 3Z" fill="#000000" />
                     </svg>
@@ -132,9 +132,9 @@ const BarContainer = ({ title, a, b, footer, flag, ahorroMensual, setAhorroMensu
 export const Calculator = () => {
     const [questions, setQuestions] = React.useState([
         { text: 'Cuantas estufas tienes', min: 1, max: 20, value: 12, desc: 'unidades', step: 1 },
-        { text: 'Cuantas sillas tienes en la terraza', min: 1, max: 100, value: 80, desc: '€/mes', step: 1 },
-        { text: 'Cuantas estufas electricas tienes', min: 0, max: 20, value: 8, desc: 'unidades', step: 10 },
-        { text: 'Cuantas horas al dia abres la terraza', min: 4, max: 12, value: 10, desc: '€/mes', step: 1 },
+        { text: 'Cuantas estufas electricas tienes', min: 1, max: 100, value: 80, desc: '€/mes', step: 1 },
+        { text: 'Cuantas hroas al dia las tienes encendidas', min: 0, max: 20, value: 8, desc: 'unidades', step: 10 },
+        { text: 'Cuantas dias abres al mes', min: 4, max: 12, value: 10, desc: '€/mes', step: 1 },
     ]);
     const [ahorroMensual, setAhorroMensual] = React.useState(0);
 
@@ -150,7 +150,7 @@ export const Calculator = () => {
 
     const tradicionalA = {
         height: calculateHuellaCo2(questions, "tradicional"),
-        backgroundColor: '#FCEADC',
+        backgroundColor: '#FBEADB',
         label: 'Tradicional',
     };
 
@@ -162,7 +162,7 @@ export const Calculator = () => {
 
     const tradicionalB = {
         height: calculateCost(questions, "tradicional"),
-        backgroundColor: '#FCEADC',
+        backgroundColor: '#FBEADB',
         label: 'Tradiconal',
     };
 
@@ -198,9 +198,7 @@ export const Calculator = () => {
                 {/* to do is get the numbers in the right orger */}
             </div>
 
-
-            {/* <SaberMas /> */}
-
+            <SaberMas />
         </div>
     )
 }

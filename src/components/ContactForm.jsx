@@ -16,7 +16,7 @@ export const ContactForm = () => {
                 <div className='contact-form-inputs'>
                     <input type="text" placeholder="Nombre" />
                     <input type="email" placeholder="Email" />
-                    <textarea placeholder="Mensaje"></textarea>
+                    <textarea type='msg' placeholder="Mensaje" style={{height: '60px', verticalAlign: 'top' }}></textarea>
                 </div>
                 <button>Enviar</button>
             </div>

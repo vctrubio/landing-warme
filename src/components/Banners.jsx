@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
-import logo from '../assets/react.svg';
+import seat from '../assets/Pilla_esta.jpg';
+import hot from '../assets/hot.svg';
+import hotTub from '../assets/hot-tub.svg';
+import saveMoney from '../assets/save-money.svg';
+import co2 from '../assets/co2.svg';
+
 import '../css/banner.css'
 
 const imgLocation = "/back-a.png"
@@ -46,6 +51,7 @@ export const BannerDesc = () => {
         <div>
             <flex className='banner-desc'>
                 <div className='banner-desc-photo'>
+                    <img src={seat} atl='Seat'/>
                 </div>
                 <div className='banner-desc-info'>
                     <h2>La solución más <br />eficiente y sostenible,<br />con un mayor confort </h2>
@@ -57,19 +63,19 @@ export const BannerDesc = () => {
             <flex className='banner-cartoon'>
                 <div className='margin-up-down'>
                     <div className="icon-text">
-                        <img src={logo} alt="Icon" />
-                            Calor bajo demanda
+                        <img src={hot} alt="Icon" />
+                        Calor bajo demanda
                     </div>
                     <div className="icon-text">
-                        <img src={logo} alt="Icon" />
+                        <img src={hotTub} alt="Icon" />
                         Mayor eficiencia y confort
                     </div>
                     <div className="icon-text">
-                        <img src={logo} alt="Icon" />
+                        <img src={co2} alt="Icon" />
                         Menos emisiones de CO2
                     </div>
                     <div className="icon-text">
-                        <img src={logo} alt="Icon" />
+                        <img src={saveMoney} alt="Icon" />
                         Ahorro de energía y dinero
                     </div>
                 </div>

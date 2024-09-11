@@ -7,11 +7,11 @@ const NavBar = () => {
 
   const controlNavbar = () => {
     if (window.scrollY < lastScrollY) {
-      setShowNavbar(true); 
+      setShowNavbar(true);
     } else {
-      setShowNavbar(false); 
+      setShowNavbar(false);
     }
-    setLastScrollY(window.scrollY); 
+    setLastScrollY(window.scrollY);
   };
 
   useEffect(() => {
@@ -25,10 +25,18 @@ const NavBar = () => {
 
   return (
     <div className={`nav-bar ${showNavbar ? 'visible' : 'hidden'}`}>
-      <a href='#warme'>Home</a>
-      <a href='#desc'>Description</a>
-      <a href='#calc'>Calculator</a>
-      <a href='#contact'>Contact</a>
+      <div className='nav-bar-header'>
+        libre de emisiones
+      </div>
+      <div>
+        <div className='nav-bar-logo'>
+          Warme
+        </div>
+        <a href='#warme'>Home</a>
+        <a href='#desc'>Description</a>
+        <a href='#calc'>Calculator</a>
+        <a href='#contact'>Contact</a>
+      </div>
     </div>
   );
 };
