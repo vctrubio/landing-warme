@@ -39,7 +39,8 @@ export const BannerPhoto = () => {
     }
 
     return (
-        <div className='banner-photo' style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className='banner-photo'>
+            <img src={backgroundImage} alt="Banner" loading="lazy" className="banner-image" />
             <h1>¿Eres Friolero?</h1>
             <h1>Descrubre Warme!</h1>
         </div>
@@ -51,7 +52,7 @@ export const BannerDesc = () => {
         <div>
             <flex className='banner-desc'>
                 <div className='banner-desc-photo'>
-                    <img src={seat} atl='Seat'/>
+                    <img src={seat} atl='Seat' />
                 </div>
                 <div className='banner-desc-info'>
                     <h2>La solución más <br />eficiente y sostenible,<br />con un mayor confort </h2>
