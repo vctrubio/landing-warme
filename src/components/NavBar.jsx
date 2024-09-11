@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/navbar.css';
+import logoWarme from '/src/assets/w_n.png';
 
 const NavBar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -30,12 +31,12 @@ const NavBar = () => {
       </div>
       <div>
         <div className='nav-bar-logo'>
-          Warme
+          <img src={logoWarme} alt='warme' />
         </div>
-        <a href='#warme'>Home</a>
-        <a href='#desc'>Description</a>
-        <a href='#calc'>Calculator</a>
-        <a href='#contact'>Contact</a>
+        <a href='#warme'>Acerca</a>
+        <a href='#desc'>Producto</a>
+        <a href='#calc'>Calculador</a>
+        <a href='#contact'>Contacto</a>
       </div>
     </div>
   );

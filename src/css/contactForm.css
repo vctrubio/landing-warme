@@ -1,5 +1,5 @@
 .contact-container{
-    margin-top: 12em;
+    margin-top: 4em;
     margin-bottom: 10em;
     gap: 4em;
     justify-content: center;
@@ -13,18 +13,37 @@
     align-items: center;
     max-width: 400px;
 
+
+    .contact-form-q{
+        display: flex;
+        flex-direction: column;
+        padding-left: 6px;
+        gap: 5px;
+        margin-bottom: 14px;
+        font-weight: bolder;
+
+        > *:last-child {
+            margin-top: 12px;
+            font-weight: normal;
+        }
+    }
+
     h2 {
+        padding-left: 6px;
         align-self: flex-start;
-        padding-left: .8em;
         font-size: 2em;
     }
+
     button {
-        width: 90%;
+        width: 100%;
         border-radius: 5px;
-        padding: 10px;
-        background-color: #F9A988;
+        padding: 14px 0px;
+        background-color: var(--primary1);
         border: none !important;
+        color: black;
+        font-size: 1.2rem;
     }
+
     button:hover {
         color: white;
     }

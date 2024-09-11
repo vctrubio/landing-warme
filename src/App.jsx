@@ -4,6 +4,7 @@ import { Calculator } from './components/Calculator';
 import { ContactForm } from './components/ContactForm';
 import Faq from './components/Faq';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -24,7 +25,8 @@ function App() {
       <div id="contact">
         <ContactForm />
       </div>
-      <Faq />
+      {/* <Faq /> */}
+      <Footer/>
     </>
   )
 }
