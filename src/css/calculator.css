@@ -58,18 +58,17 @@
 }
 
 .punto-g {
+    width: 1200px;
+    height: 400px;
     margin: 120px auto;
 
     display: flex;
     flex-direction: row;
-
     text-align: left;
     align-items: center;
+
     background-color: #E1EF97;
     border-radius: 10px;
-
-    width: 1200px;
-    height: 400px;
 
     >* {
         flex: 1;
@@ -80,21 +79,26 @@
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         width: 80%;
+        padding-top: 2em;
+        margin: .2em 0;
     }
-
+    
     h3 {
         width: 80%;
+        margin: .4em 0;
         font-size: 1.4rem;
         font-weight: normal;
     }
 }
 
+
 .punto-g-banner {
     background-color: grey;
     height: 100%;
     overflow: hidden;
+
 }
 
 
@@ -102,25 +106,25 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1.1em;
+    margin: 2em 0;
     gap: 1em;
 
-    >*{
+    >* {
         border-radius: 8px;
         border: 1px solid black;
         padding: 20px;
         color: black;
     }
-    
-    
-    input{
+
+
+    input {
         background-color: #E1EF97;
         font-weight: bolder;
         color: black;
         width: 225px;
     }
 
-    input:focus{
+    input:focus {
         outline: 1px solid #E1EF97;
     }
 
@@ -131,11 +135,11 @@
         color: #E1EF97;
     }
 
-    button:focus{
+    button:focus {
         outline: 1px solid #E1EF97;
     }
 
-    button:hover{
+    button:hover {
         border: 1px solid #E1EF97;
     }
 
@@ -149,8 +153,8 @@
     justify-content: center;
     align-items: center;
     height: 40px;
-    width: 90px;
-    border: 1px solid rgb(187, 179, 179);
+    width: 100px;
+    border: 1px solid rgb(220, 204, 204);
     margin-bottom: 2px;
     border-radius: 2px;
     padding: 0 0.1em;

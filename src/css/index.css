@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Chivo', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,41 +13,41 @@
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 
-    /* Primary Colors */
-    --primary-2: #FCEDE1;
-    --primary-1: #F9DDC4;
-    --primary: #F3BA88;
-    --primary1: #EB8730;
-    --primary2: #AC5911;
-  
-    /* Secondary Colors */
-    --secondary-2: #F7FBE5;
-    --secondary-1: #F0F7CB;
-    --secondary: #E1EF97;
-    --secondary1: #C8E245;
-    --secondary2: #92AA1B;
-  
-    /* Neutral - Light */
-    --light: #FFFFFF;
-    --light-1: #F8F8FC;
-    --light-2: #F1F3F9;
-    --light-3: #E1E6EF;
-  
-    /* Neutral - Dark */
-    --dark: #000000;
-    --dark-1: #202327;
-    --dark-2: #3F444D;
-    --dark-3: #6F737A;
-  
-    /* Text/Icon - Light Mode */
-    --dark-primary: #1F1F1F;
-    --dark-secondary: #4A505C;
-    --dark-disabled: #6C707A;
-  
-    /* Text/Icon - Dark Mode */
-    --dark-primary-darkmode: #FFFFFF;
-    --dark-secondary-darkmode: #C2C2C4;
-    --dark-disabled-darkmode: #9D9EA1;
+  /* Primary Colors */
+  --primary-2: #FCEDE1;
+  --primary-1: #F9DDC4;
+  --primary: #F3BA88;
+  --primary1: #EB8730;
+  --primary2: #AC5911;
+
+  /* Secondary Colors */
+  --secondary-2: #F7FBE5;
+  --secondary-1: #F0F7CB;
+  --secondary: #E1EF97;
+  --secondary1: #C8E245;
+  --secondary2: #92AA1B;
+
+  /* Neutral - Light */
+  --light: #FFFFFF;
+  --light-1: #F8F8FC;
+  --light-2: #F1F3F9;
+  --light-3: #E1E6EF;
+
+  /* Neutral - Dark */
+  --dark: #000000;
+  --dark-1: #202327;
+  --dark-2: #3F444D;
+  --dark-3: #6F737A;
+
+  /* Text/Icon - Light Mode */
+  --dark-primary: #1F1F1F;
+  --dark-secondary: #4A505C;
+  --dark-disabled: #6C707A;
+
+  /* Text/Icon - Dark Mode */
+  --dark-primary-darkmode: #FFFFFF;
+  --dark-secondary-darkmode: #C2C2C4;
+  --dark-disabled-darkmode: #9D9EA1;
 
 
 }
@@ -87,9 +87,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -102,9 +104,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
@@ -115,4 +119,3 @@ button:focus-visible {
     flex-direction: column;
   }
 }
-
