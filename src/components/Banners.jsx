@@ -80,6 +80,16 @@ export const BannerDesc = () => {
                     </div>
                 </div>
                 <div className='banner-cartoon-photo'>
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
+                    helloworld<br></br>helloworld
                 </div>
             </flex>
         </div>

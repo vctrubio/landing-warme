@@ -23,6 +23,11 @@
   color: #888;
 }
 
+flex {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid blue; */
+}
 
 @keyframes logo-spin {
   from {
@@ -38,3 +43,9 @@
     animation: logo-spin infinite 20s linear;
   }  
 }  
+
+@media (max-width: 768px) {
+  flex {
+    flex-direction: column;
+  }
+}

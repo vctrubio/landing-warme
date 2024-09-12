@@ -123,15 +123,12 @@
 }
 
 @media (max-width: 768px) {
-    .banner-cartoon-photo {
-        display: none;
+    .banner-cartoon{
+        flex-direction: column;
+        >*{
+            width: 100vw !important;
+            height: 100% !important;
+        }
     }
 
-    .margin-up-down {
-        width: 100vw;
-    }
-
-    .icon-text {
-        padding: 0;
-    }
 }

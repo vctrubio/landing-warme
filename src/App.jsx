@@ -16,9 +16,9 @@ function App() {
       <div id="banner">
         <BannerPhoto />
       </div>
-      {/* <div id="desc">
+      <div id="desc">
         <BannerDesc />
-      </div> */}
+      </div>
       {/* <div id="calc">
         <Calculator />
       </div> */}
