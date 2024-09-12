@@ -151,5 +151,15 @@
         }
     }
 
+    .margin-up-down{
+        padding-left: 50px;
+    }
+    .icon-text {
+        letter-spacing: 0px;
+        font-size: 1.2rem;
+    }
 
+    .banner-photo h1{
+        font-size: 2.4rem;
+    }
 }

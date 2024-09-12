@@ -50,6 +50,13 @@
 
 }
 
+input:required:invalid, 
+textarea:required:invalid {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #ccc; /* Default border */
+}
+
 .contact-form-inputs{
     display: flex;
     flex-direction: column;
@@ -75,4 +82,9 @@
             border: 1px solid #F9A988;
         }
     }
+   
+}
+
+button[type="submit"]:focus {
+    outline: 2px solid transparent; /* Black outline on focus */
 }

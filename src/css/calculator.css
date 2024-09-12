@@ -6,7 +6,7 @@
 
     h1{
         text-align: center;
-        margin-bottom: .8em;
+        margin-bottom: 2em;
         width: 100%;
         margin: 0 auto;
     }
@@ -17,8 +17,9 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    margin: auto;
+    margin: 2em 0;
     gap: 10px;
+
 
 }
 
@@ -294,7 +295,7 @@
     
 
     .punto-ahorro {
-        width: 400px;
+        width: 380px;
 
         >* {
             width: 100%;
@@ -306,7 +307,7 @@
     }
 
     .bar-container {
-        /* --width-container: 420px; */
+        --width-container: 380px;
         gap: 1em;
         .bar-content {
             width: calc(var(--width-container) / 2 - 25px);

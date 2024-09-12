@@ -1,7 +1,7 @@
 .nav-bar {
     position: fixed;
     top: 0;
-    height: 10vh;
+    height: 100px;
     width: 100%;
     background-color: white;
     padding: 0 0 1.4em 0;
@@ -118,5 +118,6 @@
         position: relative !important;
         transform: translateX(-78px) translateY(-30px);
     }
+
 
 }
