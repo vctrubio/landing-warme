@@ -16,17 +16,17 @@ function App() {
       <div id="banner">
         <BannerPhoto />
       </div>
-      <div id="desc">
+      {/* <div id="desc">
         <BannerDesc />
-      </div>
-      <div id="calc">
+      </div> */}
+      {/* <div id="calc">
         <Calculator />
-      </div>
-      <div id="contact">
+      </div> */}
+      {/* <div id="contact">
         <ContactForm />
-      </div>
+      </div> */}
       {/* <Faq /> */}
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )
 }

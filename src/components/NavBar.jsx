@@ -33,10 +33,10 @@ const NavBar = () => {
         <div className='nav-bar-logo'>
           <img src={logoWarme} alt='warme' />
         </div>
-        <a href='#warme'>Acerca</a>
-        <a href='#desc'>Producto</a>
-        <a href='#calc'>Calculador</a>
-        <a href='#contact'>Contacto</a>
+        <a className="nav-bar-mob" href='#warme'>Acerca</a>
+        <a className="nav-bar-mob" href='#desc'>Producto</a>
+        <a className="nav-bar-mob" href='#calc'>Calculador</a>
+        <a className="nav-bar-mob" href='#contact'>Contacto</a>
       </div>
     </div>
   );
