@@ -175,7 +175,7 @@ export const Calculator = () => {
 
     return (
         <div className='calculator-container'>
-            <h1 style={{ marginBottom: '.5em', textAlign: 'center' }}>Calcula tu ahorro <br />cambiándote a Warme</h1>
+            <h1>Calcula tu ahorro <br />cambiándote a Warme</h1>
             <div className='calculator'>
                 <div className='calculator-qs'>
                     {questions.map((question, index) => (
@@ -198,7 +198,6 @@ export const Calculator = () => {
                 <PuntoDeAhorro data={dataLineChart} ahorroMensual={ahorroMensual} />
                 {/* to do is get the numbers in the right orger */}
             </div>
-
 
             <SaberMas />
         </div>

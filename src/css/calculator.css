@@ -3,7 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid rgb(208, 195, 195); */
+
+    h1{
+        text-align: center;
+        margin-bottom: .8em;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .calculator {
@@ -289,7 +295,7 @@
     
 
     .punto-ahorro {
-        width: 450px;
+        width: 400px;
 
         >* {
             width: 100%;
@@ -301,15 +307,15 @@
     }
 
     .bar-container {
-        --width-container: 420px;
-        gap: .1em;
-
+        /* --width-container: 420px; */
+        gap: 1em;
         .bar-content {
             width: calc(var(--width-container) / 2 - 25px);
         }
     }
-
+    
     .bar-container-head {
+        margin: 0;
         gap: 2em;
     }
 
