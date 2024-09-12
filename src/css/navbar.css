@@ -10,33 +10,53 @@
     justify-content: start;
     gap: 1.8em;
 
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+
     >* {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 2em;
         font-weight: bolder;
+        position: relative;
     }
-
-    transition: transform 0.3s ease-in-out;
-    z-index: 100;
 
     >*>* {
         cursor: pointer;
         padding: 6px;
         color: black;
+        position: relative;
+        border-bottom: none;
     }
 
-    >*>*:hover {
-        border-bottom: 2px solid var(--primary);
+    /* Pseudo-element positioned at the bottom with 0 height initially */
+    >*>*::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; /* Full width */
+        height: 0; /* Initial height set to 0 */
+        background-color: var(--primary);
+        transition: height 0.3s ease-in-out;
+    }
+
+    >*>*:hover::before {
+        animation: border-grow 0.3s forwards;
+    }
+
+    /* On hover out, reverse the animation (top to down disappear) */
+    >*>*:not(:hover)::before {
+        animation: border-shrink 0.3s forwards;
     }
 
     .nav-bar-logo {
         position: fixed;
         left: 82px;
         overflow: hidden;
-        width: 140px; /* Set a fixed width */
-        height: 80px; /* Set a fixed height */
+        width: 140px; 
+        height: 80px; 
         display: flex;
         align-items: center;
     }
@@ -55,12 +75,10 @@
 
 .nav-bar.hidden {
     transform: translateY(-100%);
-    /* Hide navbar when scrolling down */
 }
 
 .nav-bar.visible {
     transform: translateY(0);
-    /* Show navbar when scrolling up */
 }
 
 .nav-bar-header{
@@ -68,4 +86,22 @@
     background-color: black;
     color: white;
     padding: 5px 0;
+}
+
+@keyframes border-grow {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 4px;
+    }
+}
+
+@keyframes border-shrink {
+    0% {
+        height: 4px;
+    }
+    100% {
+        height: 0;
+    }
 }

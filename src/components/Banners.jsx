@@ -4,10 +4,9 @@ import hot from '../assets/hot.svg';
 import hotTub from '../assets/hot-tub.svg';
 import saveMoney from '../assets/save-money.svg';
 import co2 from '../assets/co2.svg';
-
+import banner from '../assets/banner.webp';
 import '../css/banner.css'
 
-const imgLocation = "/back-a.png"
 
 export const BannerPhoto = () => {
     const [backgroundImage, setBackgroundImage] = useState(null);
@@ -19,11 +18,11 @@ export const BannerPhoto = () => {
         let imageSrc;
 
         if (hour >= 6 && hour < 12) {
-            imageSrc = imgLocation;
+            imageSrc = banner;
         } else if (hour >= 12 && hour < 18) {
-            imageSrc = imgLocation;
+            imageSrc = banner;
         } else {
-            imageSrc = imgLocation;
+            imageSrc = banner;
         }
 
         setBackgroundImage(imageSrc);
