@@ -17,7 +17,6 @@ export const ContactForm = () => {
     return (
         <flex className='contact-container'>
         <div className='d-flex' style={{ width: '400px', height: '580px', backgroundColor: 'grey', borderRadius: '5px' }}>
-            {/* Optional content for this div */}
         </div>
         <div className='contact-form'>
             <h2>Contacto</h2>
