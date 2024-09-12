@@ -33,10 +33,9 @@ const NavBar = () => {
   };
 
   const handleLinkClick = (event, targetId) => {
-    event.preventDefault();
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      const offset = 100;
+      const offset = 5;
       const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition - offset;
 

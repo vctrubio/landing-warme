@@ -1,13 +1,12 @@
 .nav-bar {
     position: fixed;
     top: 0;
-    height: 11vh;
+    height: 10vh;
     width: 100%;
     background-color: white;
-
+    padding: 0 0 1.4em 0;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     gap: 1.8em;
 
     transition: transform 0.3s ease-in-out;
@@ -19,7 +18,6 @@
         align-items: center;
         gap: 2em;
         font-weight: bolder;
-        position: relative;
     }
 
     >*>* {
