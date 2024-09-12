@@ -32,7 +32,9 @@ const Footer = () => {
                             <a href='#contact' onClick={(e) => handleLinkClick(e, 'contact')}>Contacto</a>
                         </div>
                         <div className='footer-logo'>
-                            <img src={WB} alt='warme' />
+                            <a href='#warme'>
+                                <img src={WB} alt='warme' />
+                            </a>
                         </div>
                     </div>
                     <div className="footer-icons">
