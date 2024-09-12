@@ -29,7 +29,8 @@ const CalculatorQuestion = ({ question, min, max, value, setValue, desc }) => {
                     max={max}
                     value={value}
                     onChange={handleSliderChange}
-                    style={{ width: '320px' }}
+                    style={{ width: '300px' }}
+
                 />
                 <div className='slider-target'>{value} {desc}</div>
             </div>
@@ -40,7 +41,7 @@ const CalculatorQuestion = ({ question, min, max, value, setValue, desc }) => {
 const SaberMas = () => {
     return (
         <div className='punto-g'>
-            <div>
+            <div className='punto-g-middle'>
                 <h2>¿Te gustaría saber exactamente <br></br>cuánto podrías ahorrar con Warme?</h2>
                 <h3>Déjanos tu mail y te haremos un estudio <br /> exhaustivo personalizado</h3>
 
@@ -197,6 +198,7 @@ export const Calculator = () => {
                 <PuntoDeAhorro data={dataLineChart} ahorroMensual={ahorroMensual} />
                 {/* to do is get the numbers in the right orger */}
             </div>
+
 
             <SaberMas />
         </div>

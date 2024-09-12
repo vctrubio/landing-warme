@@ -13,15 +13,15 @@ function App() {
       <div id="warme">
         <NavBar />
       </div>
-      <div id="banner">
+      {/* <div id="banner">
         <BannerPhoto />
       </div>
       <div id="desc">
         <BannerDesc />
-      </div>
-      {/* <div id="calc">
-        <Calculator />
       </div> */}
+      <div id="calc">
+        <Calculator />
+      </div>
       {/* <div id="contact">
         <ContactForm />
       </div> */}

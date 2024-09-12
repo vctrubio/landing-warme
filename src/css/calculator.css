@@ -13,7 +13,9 @@
     text-align: left;
     margin: auto;
     gap: 10px;
+
 }
+
 
 
 .calculator-question-units {
@@ -22,6 +24,7 @@
     align-items: baseline;
     gap: 25px;
     height: 65px;
+    width: 380px !important;
 
     >* {
         align-self: center;
@@ -61,7 +64,7 @@
     width: 1200px;
     height: 400px;
     margin: 120px auto;
-
+    
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -105,6 +108,7 @@
 .punto-g-button {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: center;
     margin: 2em 0;
     gap: 1em;
@@ -256,11 +260,17 @@
 
 @media (max-width: 988px) {
 
+    .calculator{
+        overflow: hidden;
+        width: 100%;
+    }
+
     .calculator-qs {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 100%;
+        padding: 0 0;
     }
 
 
@@ -272,13 +282,11 @@
         padding: 0 2em;
     }
 
-    .punto-g {
-        width: 70%;
-
-        >* {
-            width: 100%;
-        }
+    .calculator-qq {
+        font-size: 1.1em;
+        padding-left: .2em;
     }
+    
 
     .punto-ahorro {
         width: 450px;
@@ -305,6 +313,32 @@
         gap: 2em;
     }
 
+    .punto-g-banner{
+        display: none;
+    }
+
+    .punto-g {
+        height: 600px;
+        width: 100%;
+
+        overflow: hidden;
+        >* {
+            width: 100%;
+        }
+    }
+
+    .punto-g-button{
+        width: 85%;
+        justify-content: center;
+    }
+
+    .punto-g-middle{
+        text-align: center;
+    }
+
+    .slider-range{
+        width: 200px !important;
+    }
 }
 
 input[type="range"] {
