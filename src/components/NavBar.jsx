@@ -57,7 +57,9 @@ const NavBar = () => {
       </div>
       <div>
         <div className='nav-bar-logo'>
-          <img src={logoWarme} alt='warme' />
+          <a href='#warme'>
+            <img src={logoWarme} alt='warme' />
+          </a>
         </div>
         <a className="nav-bar-mob" href='#warme' onClick={(e) => handleLinkClick(e, 'warme')}>Acerca</a>
         <a className="nav-bar-mob" href='#desc' onClick={(e) => handleLinkClick(e, 'desc')}>Producto</a>
