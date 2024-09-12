@@ -48,7 +48,7 @@ export const BannerPhoto = () => {
 
 export const BannerDesc = () => {
     return (
-        <div>
+        <div >
             <flex className='banner-desc'>
                 <div className='banner-desc-photo'>
                     <img src={seat} atl='Seat' />

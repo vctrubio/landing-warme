@@ -52,7 +52,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
+    
     transform: translateX(-50px)
 }
 
@@ -125,10 +125,31 @@
 @media (max-width: 768px) {
     .banner-cartoon{
         flex-direction: column;
+        height: 100%;
         >*{
             width: 100vw !important;
             height: 100% !important;
         }
     }
+
+    .banner-desc-photo{
+        transform: translateX(0);
+    }
+
+    .banner-desc-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 360px;
+
+        text-align: center;
+        h2{
+            font-size: 2em;
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+
 
 }
