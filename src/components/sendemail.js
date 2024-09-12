@@ -31,14 +31,12 @@ export const sendEmail = ({ text, email, msg }) => {
     });
 };
 
-export const sendEmailForm = async (e) => {
-    e.preventDefault();
-
+export const sendEmailForm = async (e, setStatusMessage) => {
     const form = e.target;
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('https://formspree.io/f/{your_form_id}', {
+        const response = await fetch('https://formspree.io/f/{meojwgpg}', {
             method: 'POST',
             body: formData,
             headers: {
@@ -47,12 +45,14 @@ export const sendEmailForm = async (e) => {
         });
 
         if (response.ok) {
-            console.log('Form successfully submitted');
+            setStatusMessage('Form successfully submitted!');
             form.reset(); // Optionally reset the form
         } else {
+            setStatusMessage('Form submission failed, please try again.');
             console.error('Form submission error:', response.statusText);
         }
     } catch (error) {
+        setStatusMessage('Form submission error, please try again.');
         console.error('Form submission error:', error);
     }
 };
