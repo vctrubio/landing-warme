@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <>
+    <div style={{overflow: 'hidden'}}>
       <div id="warme">
         <NavBar />
       </div>
@@ -22,12 +22,12 @@ function App() {
       <div id="calc">
         <Calculator />
       </div>
-      {/* <div id="contact">
+      <div id="contact">
         <ContactForm />
-      </div> */}
+      </div>
       {/* <Faq /> */}
-      {/* <Footer/> */}
-    </>
+      <Footer/>
+    </div>
   )
 }
 

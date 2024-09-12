@@ -24,10 +24,12 @@
         a:hover {
             color: var(--primary)
         }
+
         a {
-            transition: color 0.3s ease-in-out 0.1s; /* Adjust the duration and delay as needed */
+            transition: color 0.3s ease-in-out 0.1s;
+            /* Adjust the duration and delay as needed */
         }
-        
+
     }
 
 
@@ -39,28 +41,29 @@
         margin-top: 4em;
     }
 
-    .social-icons{
+    .social-icons {
         display: flex;
         gap: 1em;
-        >*{
+
+        >* {
             height: 50px;
             width: 50px;
         }
-        a{
+
+        a {
             padding: 0;
             margin: 0;
         }
     }
 
-    .assault-riffle{
+    .assault-riffle {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
         gap: 15em;
     }
 
-    .footer-logo{
+    .footer-logo {
         height: 200px;
         width: 250px;
         overflow: hidden;
@@ -68,9 +71,16 @@
         justify-content: center;
         align-items: center;
 
-        img{
+        img {
             max-width: 100%;
             max-height: 100%;
         }
     }
+}
+
+@media (max-width: 1000px) {
+    .footer-links {
+        display: none;
+    }
+
 }
